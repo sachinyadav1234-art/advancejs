@@ -193,5 +193,26 @@
 // })();
 
 //recursive function
+// function getrecursive(nr){
+//     console.log(nr);
+//     if (nr>0){
+//         getrecursive(--nr);
+//     }
+// }
+// getrecursive(3);
 
- 
+ //the performance of recursion is slightly wrose than the performance of regular iteraction 
+   
+
+
+ //nested function
+ //anonymous function
+ //like passing in function as parameter . this concept add another abstract layer to the coding
+ //function callback
+ let functionvariable = function (){
+    console.log("not so secret though");
+ }
+ function doflexiblestuff(executestuff){
+    executestuff();
+    console.log("inside stuff");
+ } 
