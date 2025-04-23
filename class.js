@@ -44,3 +44,82 @@
 //         console.log("hi there ! I'm",this.firstname);
 //     }
 // }
+//   constructor
+
+// methods
+// function on a class is called method
+
+// class Person{
+//     constructor(firstname,lastname){
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+//     }
+//     greet(){
+//         console.log("hi there",this.firstname);
+//     }
+// }
+
+
+//                                             properties
+//  class person{
+//     #firstname;
+//     #lastname;
+ 
+//  constructor(firstname,lastname){
+//         this.#firstname = firstname;
+//         this.#lastname = lastname;
+//  }
+// }
+// let p = new person("maria","saga");
+// console.log(p.firstname);
+//                                               getters and setters
+// class person{
+//     #firstname;
+//     #lastname;
+//     constructor(firstname,lastname){
+//         this.#firstname = firstname;
+//         this.#lastname = lastname;
+//     }
+//     get firstname(){
+//         return this.#firstname;
+//     }
+    
+// }
+//                                      inheritance-reusability of code
+// class Vehicle{
+//     constructor(color, currentspeed,maxspeed){
+//         this.color = color;
+//         this.currentspeed;
+//         this.maxspeed;
+
+//     }
+//     move(){
+//         console.log("moving at" , this.currentspeed);
+//     }
+//     accelerate(amount){
+//         this.currentspeed += amount;
+//     }
+// }
+// class Motorcycle extends Vehicle{
+//     constructor(color , currentspeed, maxspeed,fuel){
+//         super(color, currentspeed, maxspeed);
+//         this.fuel = fuel;
+//     }
+//     dowheelie(){
+//         console.log("driving on one wheel");
+//     }
+// }
+// let motor = new Motorcycle("black", 0 , 250, "gasoline");
+// console.log(motor.color);
+// motor.accelerate(50);
+// motor.move();
+//                                        prototypes-
+// class Person{
+//     constructor(firstname,lastname){
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+//     }
+// }
+// Person.prototype.introduce = function(){
+//     console.log("hi, i, am", this.first.name);
+// }
